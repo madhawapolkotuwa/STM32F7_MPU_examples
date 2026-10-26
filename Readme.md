@@ -307,7 +307,7 @@ HAL maps these onto `TypeExtField` (`MPU_TEX_LEVEL0/1/2`), `IsCacheable`, `IsBuf
 
 This layout is a suggestion built from the memory map. **[STM32F769-specific]**
 
-# | Base | Size | Covers | Memory type / policy | Access | XN
+| | Base | Size | Covers | Memory type / policy | Access | XN
 --|------|------|--------|----------------------|--------|----
 0 | 0x0000_0000 | 4 GB | Background: everything not listed below, including peripherals (APB/AHB), FMC bank 1 to 2 (0x6000_0000 block), unused FMC and QSPI window space, option bytes, system memory | Device, shareable (TEX 000, C 0, B 1) | Full (privileged) | Yes
 1 | 0x0800_0000 | 2 MB | Flash on AXIM, 0x0800_0000 to 0x081F_FFFF | Normal, write-through, no write allocate (WT-NWA: TEX 000, C 1, B 0) | Read-only | No
